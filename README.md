@@ -16,3 +16,5 @@ Mittelmächte:
 
 Triple Entente:
 -Konkrete Beispiele der Propaganda der Triple-Entente
+
+Basiert auf dem Template 02 auf der Webseite selfhtml.org: https://wiki.selfhtml.org/wiki/CSS/fertige_Layouts
