@@ -21,13 +21,14 @@ body {
   font: normal 1em Arial, sans-serif;
   /* Keine Mindestschriftgröße! Dies wird dem Browser, bzw. dem Nutzer überlassen! */
   color: #333;
+  background
 }
 
 
 /* ====================================================   HEADER   ==================================================== */
 
 [role="banner"] {
-  background: url("../img/Design02-orange.svg") no-repeat right,
+background: url("./img/design02-orange.svg") no-repeat right,
   #000 repeating-linear-gradient(-45deg, black, #151515 8em);
   background-size: contain, auto;
   padding: 0 0 0.5em;
