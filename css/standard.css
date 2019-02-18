@@ -97,7 +97,7 @@ nav a:focus {
 nav a:hover::after,
 nav a:focus::after {
   color: transparent;
-  }
+}
   
 
 /* ohne die Angabe der id hätte der Attributselektor eine geringere Spezifität und die Farbangabe des Texts wäre ignoriert worden. */
@@ -244,7 +244,8 @@ aside a,
 
 footer {
   background: #666 repeating-linear-gradient(-45deg, black, #151515 8em);
-  padding: 0.5em 1em 0;
+  padding-top: 0,5em;
+  padding-left: 1em;
   margin-top: 1em;
   color: white;
 }
