@@ -1,4 +1,5 @@
-/* Stylesheet für Selfhtml Design 02 
+/* Stylesheet für Selfhtml Design 02     - Akzentfarbe ist#df6c20;
+ /* Stylesheet für Selfhtml Design 02 
   responsives Layout mit Flexbox ab Z. 248   */
 
 /* ====================================================   GLOBAL DEFINITION   ==================================================== */
@@ -23,10 +24,11 @@ body {
 }
 
 
+
 /* ====================================================   HEADER   ==================================================== */
 
 [role="banner"] {
-  background: url("../img/Design02.svg") no-repeat right,
+background: url("./img/design02-orange.svg") no-repeat right,
   #000 repeating-linear-gradient(-45deg, black, #151515 8em);
   background-size: contain, auto;
   padding: 0 0 0.5em;
@@ -77,62 +79,26 @@ nav ul {
 }
 
 nav a {
-  background: #28729a;
+  background: #df6c20;
   color: white;
   text-decoration: none;
+  text-align: center;
   display: inline-block;
-  padding: 1em 0 1em 1em;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
 nav a:hover,
 nav a:focus {
-  background: #28729a;
+  background: #df6c20;
   color: white;
 }
 
 nav a:hover::after,
 nav a:focus::after {
   color: transparent;
-}
-
-
-/* ===================== STYLE SWITCHER ============================= */
-
-#styleswitcher {
-  max-width: 60em;
-  margin: 0 auto;
-}
-
-#styleswitcher li {
-  list-style-type: none;
-  display: inline-block;
-}
-
-#styleswitcher button {
-  border: 1px solid transparent;
-  border-radius: 0.2em;
-  color: white;
-  width: 4.5em;
-  text-align: center;
-}
-
-[data-stylesheet="./css/violet.css"] {
-  background: #9357b9;
-}
-
-[data-stylesheet="./css/standard.css"] {
-  background: #28729a;
-}
-
-[data-stylesheet="./css/green.css"] {
-  background: #8db243;
-  color: black;
-}
-
-#styleswitcher button[data-stylesheet="./css/yellow.css"] {
-  background: #dfac20;
-  color: black;  
-}
+  }
+  
 
 /* ohne die Angabe der id hätte der Attributselektor eine geringere Spezifität und die Farbangabe des Texts wäre ignoriert worden. */
 
@@ -154,20 +120,67 @@ nav a:focus::after {
 
 a,
 .akzentfarbe1 {
-  color: #28729a;
+  color: #df6c20;
 }
 
 .akzentfarbe2 {
   color: #ccc;
 }
 
+.content {
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
+}
+
+
 h1,
 h2 {
-  color: #28729a;
+  color: currentColor;
   font-size: 1.50em;
   font-weight: normal;
   font-family: 'Tauri', serif;
   text-transform: uppercase;
+}
+
+.article {
+position: relative;
+text-align: left;
+overflow: visible;
+max-width: 600px;
+left: 1em;
+}
+
+
+#hope {
+position: relative;
+padding-left: 0%;
+padding-right: 10%;
+border: 0%;
+margin-right: 22%;
+overflow: hidden;
+margin-right: 5%;
+}
+
+#hope_2 {
+position: relative;
+float: left;
+text-align: left;
+
+}
+
+.container {
+text-align: left;
+}
+
+
+.article {overflow: hidden;}
+#floated-imgs { float: right; }
+#floated-imgs img {display: block; }
+
+.section {
+position: static;
+padding:2%;
 }
 
 .smallteaser {
@@ -177,7 +190,8 @@ h2 {
 
 .smallteaser h2 {
   display: flex;
-  border-bottom: 2px solid;
+  color: #333;
+  border-bottom: 2px solid #df6c20;
   align-items: flex-end;
 }
 
@@ -199,7 +213,7 @@ a.more {
   float: right;
   padding: .25em 0.5em;
   margin-top: 1em;
-  background: #28729a;
+  background: #df6c20;
   color: white;
 }
 
@@ -210,7 +224,7 @@ a.more:focus {
 
 aside,
 .bigteaser {
-  background: #28729a;
+  background: #df6c20;
   padding: 0.5em;
   color: #FFFFFF;
 }
@@ -223,7 +237,7 @@ aside a,
 
 .bigteaser a.more {
   background: white;
-  color: #28729a;
+  color: #df6c20;
 }
 
 /* ==================================== footer ===========================  */
@@ -312,7 +326,7 @@ nav a {
 }
 
 [aria-current=page] {
-  color: #28729a;
+  color: #df6c20;
 }
 }
 
